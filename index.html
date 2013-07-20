@@ -8,6 +8,8 @@
 	  href="http://twitter.github.com/bootstrap/assets/css/bootstrap.css">
     <link type="text/css" rel="stylesheet"
 	  href="http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css">
+    <link href='http://fonts.googleapis.com/css?family=Ubuntu:300,400,500,700,300italic,400italic,500italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,400,700,600,300,800' rel='stylesheet' type='text/css'>
     <style type="text/css">
       /* Large desktop */
       @media (min-width: 980px) {  
@@ -15,14 +17,27 @@
           padding-top: 60px; /* 60px to make the container go all the way to the bottom of the topbar */
         }
       }
+      body {
+        font-family: 'Open Sans', Helvetica, Arial, sans-serif;
+      }
+      .heading, .subheading {
+        font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        text-align: center;
+      }
       //.container {
       //  width: 960px;
       //}
       p.lead {
-        padding-top: 15px;
+        padding-top: 1.5%;
+        font-size: 24px;
+        line-height: 30px;
       }
-      .navigation, .pitch, .section1, .section2, .faq, .footer {
-        padding: 10px 0px 10px 0px;
+      p {
+        font-size: 18px;
+        line-height: 24px;
+      }
+      .pitch {
+        padding: 2.5% 0%;
       }
       .video, .thermometer, .order, .social {
         border: 1px dotted;
@@ -66,30 +81,19 @@
     </div> 
 
    <div class="container">
-      <div class="row navigation">
-	<div class="span2 logo">
-	  Logo
-	</div>
-	<div class="span6 blank">
-	  Blank
-	</div>
-	<div class="span4 about">
-	  About
-	</div>
-      </div>
-      <div class="row heading">
+      <div class="row-fluid heading">
 	<div class="span12">
-	  <h1>Bitstarter Title</h1>
+	  <h1>Product</h1>
 	</div>
       </div>
-      <div class="row subheading">
+      <div class="row-fluid subheading">
 	<div class="span12">
-	  <p class="lead">This is my first bitstarter project.</p>
+	  <p class="lead">One sentence description.</p>
 	</div>
       </div>
-      <div class="row pitch">
-	<div class="span6 video">
-	  Video
+      <div class="row-fluid pitch">
+	<div class="span5 offset1 video">
+	  <img class="img-ploaroid" src="http://placekitten.com/480/300">
 	</div>
 	<div class="span6">
 	  <div class="thermometer">
